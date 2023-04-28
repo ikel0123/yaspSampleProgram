@@ -1,0 +1,8 @@
+main:
+	mov   b0, 23 ; write value on first register, b0
+	mov   b1, 67 ; write value on second register, b1
+	add   b0, b1 ; adds first register, b0 and second register, b1, values and writes the result (=90) to b0
+	debug b0 ; send b0 (=90) to the debugger
+	jmp main
+
+end
